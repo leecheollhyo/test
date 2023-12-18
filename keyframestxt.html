@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날아오는 텍스트</title>
+    <style>
+        p{font-size: 55px; transform: translateX(-500px);
+            animation: text 0.5s ease 0.8s 1; animation-fill-mode: forwards;}
+        .t1{animation-delay: 0.8s;}
+        .t2{animation-delay: 1.2s;}
+        .t3{animation-delay: 1.5s;}
+
+        @keyframes text{
+            0%{transform: translateX(-500px);}
+            100%{transform: translate(300px, 80px);}
+        }
+    </style>
+</head>
+<body>
+    <p class="t1">text1</p>
+    <p class="t2">text2</p>
+    <p class="t3">text3</p>
+</body>
+</html>

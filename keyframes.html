@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{width: 100px; height: 100px; background: paleturquoise; position: absolute; top: 0; left: 0;
+            animation: right1 3s linear 0s 5; animation-fill-mode: forwards;}
+
+            @keyframes right1{
+                0%{top: 0; left: 0;}
+                50%{top: 0; left: 500px;}
+                100%{top: 500px; left: 0;}
+            }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
